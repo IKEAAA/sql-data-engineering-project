@@ -6,7 +6,7 @@ GO
 USE MedallionDemo;
 GO
 
-CREATE SCHEMA bronze_customers (
+CREATE SCHEMA BRONZE (
     raw_customer_id NVARCHAR(50),
     raw_name NVARCHAR(255),
     raw_email NVARCHAR(255),
@@ -14,7 +14,7 @@ CREATE SCHEMA bronze_customers (
 );
 GO
 
-CREATE SCHEMA silver_customers (
+CREATE SCHEMA SILVER (
     customer_id INT,
     name NVARCHAR(255),
     email NVARCHAR(255),
@@ -22,7 +22,7 @@ CREATE SCHEMA silver_customers (
 );
 GO
 
-CREATE SCHEMA gold_customer_signups (
+CREATE SCHEMA GOLD (
     signup_month VARCHAR(7),
     total_signups INT
 );
